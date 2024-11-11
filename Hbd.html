@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <img src="kuromi.jpg" class="sticker sticker1" alt="Sticker">
+<img src="cat.jpg" class="sticker sticker2" alt="Sticker">
+<img src="green 1.png" class="sticker sticker3" alt="Sticker">
+<img src="green 2.png" class="sticker sticker4" alt="Sticker">
+    <div class="container">
+        <div class="card">
+            <img src="yunjin.png" alt="Happy Birthday" class="profile-img">
+            <h1 class="greeting">Happy Birthday,  <span id="person-name">Yunjin <3</span>!</h1>
+            <p class="message" id="birthday-message">
+                Wishing you a day filled with love, joy, and all your favorite things! 🎂🎉
+            </p>
+
+            <!-- Optional: Video Section -->
+            <div class="video-container" id="video-container">
+    <iframe 
+        width="50%" 
+        height="315" 
+        src="https://www.youtube.com/embed/h9hcY6AH2pw" 
+        title="YouTube video player" 
+        frameborder="10" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+
+            <button class="show-greeting-btn" onclick="toggleMessage()">Special Message</button>
+            <div class="custom-message" id="custom-message">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMessage() {
+            const messageDiv = document.getElementById('custom-message');
+            if (messageDiv.style.display === 'none' || messageDiv.style.display === '') {
+                messageDiv.style.display = 'block';
+            } else {
+                messageDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

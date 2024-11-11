@@ -9,8 +9,16 @@ body {
 }
 
 .container {
-    max-width: 90%; /* Allow container to scale with screen */
+    text-align: center;
+    background: #FFFFFF;
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    height: 80vh; /* Adjusted to fit the view and allow scrolling */
+    margin: 20px auto;
+    animation: float 4s ease-in-out infinite;
 }
 
 .card {
@@ -22,8 +30,13 @@ body {
 }
 
 .profile-img {
-    width: 50%; /* Make image responsive */
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #FFF;
+    margin: 0 auto 20px;
+    display: block;
 }
 
 .greeting {
@@ -111,41 +124,4 @@ iframe {
     right: 10%;
     width: 300px;
     transform: translateY(-50%);
-}
-/* Mobile styles */
-@media (max-width: 768px) {
-    body {
-        flex-direction: column; /* Stacks elements vertically on small screens */
-        padding: 10px;
-    }
-
-    .container {
-        width: 100%; /* Full width on mobile */
-        padding: 15px;
-        height: auto; /* Remove fixed height to allow content to flow */
-        box-shadow: none; /* Optional: simplify shadow for mobile */
-    }
-
-    .profile-img {
-        width: 80px; /* Smaller image on mobile */
-        height: 80px;
-    }
-
-    .greeting {
-        font-size: 20px; /* Reduce font size */
-    }
-
-    .message {
-        font-size: 16px;
-    }
-
-    .show-greeting-btn {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    .sticker {
-        width: 150px; /* Smaller stickers on mobile */
-        opacity: 0.6; /* Optional: make them less visible for clarity */
-    }
 }
